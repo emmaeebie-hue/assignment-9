@@ -1,0 +1,28 @@
+# I chose a graph to represent a social network because it allows
+# people to be connected to multiple other people without needing
+# a specific order or hierarchy. Each person represents a node,
+# and each friendship represents an edge connecting two nodes.
+# Since friendships are bidirectional, a graph makes it easy to
+# show how two people are connected to each other.
+#
+# A list would not work as well because it would be harder to
+# organize and track all the different relationships between
+# people. A tree also would not be a good fit since it follows
+# a parent-child structure, while social networks allow people
+# to have many connections without following a hierarchy.
+#
+# One advantage of using an adjacency list was it only stores
+# the friendships that actually exist. This avoids taking up
+# unnecessary space for connections that are not there. Adding
+# a person to the dictionary is efficient, and adding a friend
+# to a person's list is also relatively simple. Adding a person to 
+# the dictionary and adding a friend to someone's list are both O(1) 
+# operations on average, so they take about the same amount of time 
+# regardless of how large the network gets. Printing the network takes 
+# O(V + E) time because it has to go through each person and their 
+# friendships. 
+# Another consideration is that each friendship needs to be added in 
+# both directions to keep the network accurate. For this type of situation,
+# an adjacency list is a good choice because it keeps the 
+# structure organized while making it easy to add people and 
+# manage their relationships.
